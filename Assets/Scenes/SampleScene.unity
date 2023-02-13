@@ -1301,8 +1301,8 @@ MonoBehaviour:
   Lives: {fileID: 2066142912}
   LivePrefab: {fileID: 1949578148380733762, guid: f883ccb27b409ae45931a203aa341c29, type: 3}
   Panel: {fileID: 2119098577}
-  LowHpBoardPrefab: {fileID: 3375397009430616908, guid: 5dd3a195744d06d4a8659ebb07f65de2, type: 3}
-  FullHpBoardPrefab: {fileID: 383524614309058135, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+  LowHpBoardPrefab: {fileID: 1809200593621046351, guid: 5dd3a195744d06d4a8659ebb07f65de2, type: 3}
+  FullHpBoardPrefab: {fileID: 3647579738105502036, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
   BoardPanel: {fileID: 1093101240}
   LosePanel: {fileID: 30280431}
 --- !u!212 &1816407194
