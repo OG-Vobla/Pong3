@@ -20,7 +20,7 @@ public class PanelControl : MonoBehaviour
 	}
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
 	{
 		HorizontalMove = Input.GetAxisRaw("Horizontal") * speed;
 		transform.position = new Vector2(Mathf.Clamp(transform.position.x + HorizontalMove * Time.deltaTime, LeftWall.position.x, RightWall.position.x), transform.position.y);
@@ -37,7 +37,7 @@ public class PanelControl : MonoBehaviour
 	}
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		float relativePos = (collision.transform.position.x - transform.position.x) / GetComponent<BoxCollider2D>().bounds.size.x;
+		float relativePos = (collision.transform.position.x - transform.position.x) / GetComponent<EdgeCollider2D>().bounds.size.x;
 		collision.rigidbody.velocity= new Vector2(relativePos, 1).normalized * collision.rigidbody.velocity.magnitude;
 	}
 }
