@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5103122645035657775, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: LowHpBoardPrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 383524614309058135, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
       propertyPath: m_Name
       value: LowHpBoard Variant
@@ -15,6 +19,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: LowHpBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 2114346337462430285, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1738319905, guid: 67a0670194c0a0f439c407b1201282d9, type: 3}
     - target: {fileID: 2114346337462430285, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
       propertyPath: m_Color.b
       value: 0.09404255
@@ -26,6 +34,14 @@ PrefabInstance:
     - target: {fileID: 2114346337462430285, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2979895551344109886, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Name
+      value: LowHpBoard Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2979895551344109886, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_TagString
+      value: LowHpBoard
       objectReference: {fileID: 0}
     - target: {fileID: 3134931590139582626, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
       propertyPath: m_Color.b
@@ -91,36 +107,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4983814775230232739, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1738319905, guid: 67a0670194c0a0f439c407b1201282d9, type: 3}
+    - target: {fileID: 6646404388136487767, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: LowHpBoardPrefab
+      value: 
+      objectReference: {fileID: 207142629348238373}
+    m_RemovedComponents:
+    - {fileID: -5103122645035657775, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
---- !u!1 &1809200593621046351 stripped
+--- !u!1 &207142629348238373 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3647579738105502036, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2979895551344109886, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
   m_PrefabInstance: {fileID: 3136014044641987867}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1870678420657494782
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809200593621046351}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0

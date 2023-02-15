@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2979895551344109886
+--- !u!1 &7866115209994402279
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6687438387784579647}
-  - component: {fileID: 4983814775230232739}
-  - component: {fileID: 6879401642107238026}
-  - component: {fileID: 6646404388136487767}
+  - component: {fileID: 7866115209994402272}
+  - component: {fileID: 7866115209994402273}
+  - component: {fileID: 7866115209994402278}
+  - component: {fileID: -279645066287016401}
   m_Layer: 0
-  m_Name: FullHpBoard
-  m_TagString: FullHpBoard
+  m_Name: ThreeBallsPerk
+  m_TagString: ThreeBallsPerk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6687438387784579647
+--- !u!4 &7866115209994402272
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2979895551344109886}
+  m_GameObject: {fileID: 7866115209994402279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.55, y: 4.67, z: 1}
+  m_LocalPosition: {x: -0.7336, y: 0.6696, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4983814775230232739
+--- !u!212 &7866115209994402273
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2979895551344109886}
+  m_GameObject: {fileID: 7866115209994402279}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,55 +75,61 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1015363323, guid: 67a0670194c0a0f439c407b1201282d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66e339ecf28d00345a3f2899776d0a7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.16}
+  m_Size: {x: 0.99, y: 0.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6879401642107238026
+--- !u!61 &7866115209994402278
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2979895551344109886}
+  m_GameObject: {fileID: 7866115209994402279}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.16}
-    newSize: {x: 0.32, y: 0.16}
+    oldSize: {x: 6.73, y: 6.25}
+    newSize: {x: 0.99, y: 0.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.16}
+  m_Size: {x: 7, y: 6}
   m_EdgeRadius: 0
---- !u!114 &6646404388136487767
-MonoBehaviour:
+--- !u!50 &-279645066287016401
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2979895551344109886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e012de390444d4408a5bb77928e15df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LowHpBoardPrefab: {fileID: 207142629348238373, guid: 5dd3a195744d06d4a8659ebb07f65de2, type: 3}
-  ThreeBallsPerk: {fileID: 7866115209994402279, guid: 0e6b93b716b3cff46baaba8bd1d8a4b4, type: 3}
-  PanelPerk: {fileID: 8617088747006979540, guid: 33e1f12a9a7725a41b23ccb4761d8369, type: 3}
+  m_GameObject: {fileID: 7866115209994402279}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

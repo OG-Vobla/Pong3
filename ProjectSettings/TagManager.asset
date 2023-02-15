@@ -7,6 +7,9 @@ TagManager:
   - FullHpBoard
   - LowHpBoard
   - LoseZone
+  - Ball
+  - ThreeBallsPerk
+  - PerkPanelSize
   layers:
   - Default
   - TransparentFX
@@ -14,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
+  - 1
   - 
-  - 
-  - 
+  - 3
   - 
   - 
   - 
@@ -41,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 2202121193
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
