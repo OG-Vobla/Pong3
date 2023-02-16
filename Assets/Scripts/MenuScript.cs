@@ -8,9 +8,13 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour, IPointerClickHandler
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+	// Start is called before the first frame update
+	[SerializeField] AudioSource BGAudio;
+	[SerializeField] GameObject BG;
+	void Start()
+	{
+		DontDestroyOnLoad(BG);
+		DontDestroyOnLoad(BGAudio);
 		StartCoroutine(enumerator());
 	}
 
@@ -49,6 +53,7 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
 
 	public void OnPointerClick(PointerEventData eventData)
 	{
+
 		SceneManager.LoadScene("Game");
 	}
 

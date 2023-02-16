@@ -19,6 +19,7 @@ public class ZoneScript : MonoBehaviour
 	[SerializeField] GameObject FullHpBoardPrefab;
 	[SerializeField] UnityEngine.Transform BoardPanel;
 	[SerializeField] GameObject Points;
+	[SerializeField] GameObject Score;
 	[SerializeField] GameObject Balls;
 	[SerializeField] GameObject RightPanel;
 	[SerializeField] GameObject LeftPanel;
@@ -41,6 +42,11 @@ public class ZoneScript : MonoBehaviour
 	void Update()
 	{
 		Points.GetComponent<Text>().text = (Mathf.Abs(BoardCount - BoardPanel.childCount)).ToString();
+		if (int.Parse(Points.GetComponent<Text>().text) > int.Parse(Score.GetComponent<Text>().text))
+		{
+			Score.GetComponent<Text>().text = Points.GetComponent<Text>().text;
+			PlayerPrefs.SetInt("score", int.Parse(Score.GetComponent<Text>().text));
+		}
 		if (BoardPanel.childCount == 0)
 		{
 			WinPanel.SetActive(true);
@@ -57,6 +63,8 @@ public class ZoneScript : MonoBehaviour
 	}
 	private void LvlDraw()
 	{
+
+		Score.GetComponent<Text>().text = PlayerPrefs.GetInt("score").ToString(); 
 		Panel.localScale = new Vector2(6, Panel.localScale.y);
 		livesCount = 3;
 		if (Lives.childCount > 0)

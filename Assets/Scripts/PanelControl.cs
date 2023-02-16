@@ -83,13 +83,13 @@ public class PanelControl : MonoBehaviour
 			Destroy(collision.gameObject);
 			var ball1 = Instantiate(Ball, Balls.transform);
 			ball1.transform.position = new Vector2(transform.position.x, transform.position.y + 1);
-			ball1.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.position.x - 4f, 4f);
+			ball1.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.position.x - transform.position.x/2, 4f);
 			var ball2 = Instantiate(Ball, Balls.transform);
 			ball2.transform.position = new Vector2(transform.position.x, transform.position.y + 1);
 			ball2.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.position.x, 4f);
 			var ball3 = Instantiate(Ball, Balls.transform);
 			ball3.transform.position = new Vector2(transform.position.x, transform.position.y + 1);
-			ball3.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.position.x + 4f, 4f);
+			ball3.GetComponent<Rigidbody2D>().velocity = new Vector2(transform.position.x + transform.position.x / 2, 4f);
 		}
 		else if (collision.gameObject.tag == "PerkPanelSize")
 		{
