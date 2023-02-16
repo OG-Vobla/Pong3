@@ -52,8 +52,8 @@ public class PanelControl : MonoBehaviour
 				}
 			}
 		}
-		//HorizontalMove = Input.GetAxisRaw("Horizontal") * speed;
-		transform.position = new Vector2(Mathf.Clamp(transform.position.x + HorizontalMove * Time.deltaTime, LeftWall.position.x + transform.localScale.x/1.8f, RightWall.position.x - transform.localScale.x / 1.8f), transform.position.y);
+		HorizontalMove = Input.GetAxisRaw("Horizontal") * speed;
+		transform.position = new Vector2(Mathf.Clamp(transform.position.x+  HorizontalMove * Time.deltaTime, LeftWall.position.x + transform.localScale.x/1.8f, RightWall.position.x - transform.localScale.x / 1.8f), transform.position.y);
 		if (Input.GetKeyDown(KeyCode.Space) && OnPanel && Balls.transform.childCount == 1)
 		{
 			LosePanel.SetActive(false);

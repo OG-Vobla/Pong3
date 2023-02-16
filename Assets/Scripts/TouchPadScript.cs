@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using static UnityEngine.UI.Image;
 
-public class TouchPadScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
+public class TouchPadScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler, IPointerClickHandler
 {
 	[SerializeField] UnityEngine.Transform Panel; 
 	[SerializeField] float speed = 10f;
+	public static bool IsClick = false;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -17,8 +18,8 @@ public class TouchPadScript : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     // Update is called once per frame
     void Update()
     {
-        
-    }
+
+	}
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		PanelControl.Origin = eventData.position.x;
@@ -32,5 +33,10 @@ public class TouchPadScript : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 	public void OnDrag(PointerEventData eventData)
 	{
 		PanelControl.HorizontalMove = (eventData.position.x - PanelControl.Origin) * speed;
+	}
+
+	public void OnPointerClick(PointerEventData eventData)
+	{
+		IsClick = true;
 	}
 }

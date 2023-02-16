@@ -1240,10 +1240,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      breakout_pieces_2_80: 1666873091
       breakout_pieces_2_75: -2124658230
       breakout_pieces_2_36: -1316518990
-      breakout_pieces_2_82: 1476360935
       breakout_pieces_2_19: 1117695521
       breakout_pieces_2_52: -216982634
       breakout_pieces_2_32: 1407414247
@@ -1279,11 +1277,11 @@ TextureImporter:
       breakout_pieces_2_4: 1958894577
       breakout_pieces_2_34: -1895566243
       breakout_pieces_2_29: -2066879087
-      breakout_pieces_2_31: 622423056
-      breakout_pieces_2_28: 1925031877
-      breakout_pieces_2_11: -1314746199
       breakout_pieces_2_13: 2098951253
       breakout_pieces_2_25: 1402965538
+      breakout_pieces_2_28: 1925031877
+      breakout_pieces_2_31: 622423056
+      breakout_pieces_2_11: -1314746199
       breakout_pieces_2_66: -456575931
       breakout_pieces_2_69: -281310464
       breakout_pieces_2_51: 636146149
@@ -1304,10 +1302,12 @@ TextureImporter:
       breakout_pieces_2_26: 156503335
       breakout_pieces_2_56: -51929626
       breakout_pieces_2_74: 1245441420
+      breakout_pieces_2_82: 1476360935
       breakout_pieces_2_5: 891732078
       breakout_pieces_2_81: 1430079020
       breakout_pieces_2_18: -1987055755
       breakout_pieces_2_38: -1566500619
+      breakout_pieces_2_80: 1666873091
       breakout_pieces_2_72: -2040007954
       breakout_pieces_2_10: -1135287888
       breakout_pieces_2_14: 2110199854

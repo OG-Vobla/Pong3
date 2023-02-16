@@ -17,7 +17,11 @@ public class MenuScript : MonoBehaviour, IPointerClickHandler
     // Update is called once per frame
     void Update()
     {
+		if (Input.anyKey)
+		{
 
+			SceneManager.LoadScene("Game");
+		}
     }
 	
 	public IEnumerator enumerator()

@@ -22,6 +22,8 @@ public class ZoneScript : MonoBehaviour
 	[SerializeField] GameObject Balls;
 	[SerializeField] GameObject RightPanel;
 	[SerializeField] GameObject LeftPanel;
+	[SerializeField] AudioSource winAudio;
+	[SerializeField] AudioSource loseAudio;
 
 	int PointCount = 0;
 	int BoardCount = 0;
@@ -41,8 +43,8 @@ public class ZoneScript : MonoBehaviour
 		Points.GetComponent<Text>().text = (Mathf.Abs(BoardCount - BoardPanel.childCount)).ToString();
 		if (BoardPanel.childCount == 0)
 		{
-			SceneManager.LoadScene("StartMenu");
-			//WinPanel.SetActive(true);
+			WinPanel.SetActive(true);
+			winAudio.Play();
 			if (Balls.transform.childCount > 0)
 			{
 				for (int i = 0; i < Balls.transform.childCount; i++)
@@ -127,6 +129,10 @@ public class ZoneScript : MonoBehaviour
 		{
 			Destroy(GameObject.FindGameObjectsWithTag("ThreeBallsPerk")[i]);
 		}
+		for (int i = 0; i < GameObject.FindGameObjectsWithTag("PerkPanelSize").Length; i++)
+		{
+			Destroy(GameObject.FindGameObjectsWithTag("PerkPanelSize")[i]);
+		}
 		PanelControl.OnPanel = true;
 		var bal = Instantiate(Ball, Balls.transform);
 		
@@ -158,8 +164,8 @@ public class ZoneScript : MonoBehaviour
 				Destroy(Lives.GetChild(Lives.childCount - 1).gameObject);
 				if (livesCount == 0)
 				{
-					SceneManager.LoadScene("StartMenu");
-					//LosePanel.SetActive(true);
+					loseAudio.Play();
+					LosePanel.SetActive(true);
 					LvlDraw();
 				}
 				else

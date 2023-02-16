@@ -115,6 +115,22 @@ PrefabInstance:
       propertyPath: LowHpBoardPrefab
       value: 
       objectReference: {fileID: 207142629348238373}
+    - target: {fileID: 6879401642107238026, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Size.x
+      value: 0.34786275
+      objectReference: {fileID: 0}
+    - target: {fileID: 6879401642107238026, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Size.y
+      value: 0.17742303
+      objectReference: {fileID: 0}
+    - target: {fileID: 6879401642107238026, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0014215857
+      objectReference: {fileID: 0}
+    - target: {fileID: 6879401642107238026, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0014240779
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5103122645035657775, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8a5a9b210dc82640a4b9bb63999e7b3, type: 3}
